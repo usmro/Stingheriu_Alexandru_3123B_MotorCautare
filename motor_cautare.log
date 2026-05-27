@@ -1,0 +1,20 @@
+[INFO] === START MOTOR DE CAUTARE ===
+[EROARE] Calea introdusa este invalida sau nu este un folder: asd
+[INFO] === START MOTOR DE CAUTARE ===
+[INFO] Incepem indexarea recursiva in: ./test_extrem
+[INFO] Am inceput analizarea (Fast-Mode) pentru: ./test_extrem/gigant.txt
+[INFO] Analiza finalizata pentru: ./test_extrem/gigant.txt
+[INFO] Document integrat in indexul global: ./test_extrem/gigant.txt
+[INFO] Indexare completata în 271124 ms.
+[INFO] Utilizatorul a cautat cuvantul: cuvant_unic_test
+[INFO] Utilizatorul a cautat cuvantul: cuvant_unic_test
+[INFO] Utilizatorul a cautat cuvantul: ascuns_secret
+[INFO] Utilizatorul a cautat cuvantul: java
+[INFO] Utilizatorul a cautat cuvantul: java
+[INFO] Utilizatorul a cautat cuvantul: secret
+[INFO] Utilizatorul a cautat cuvantul: secret
+[INFO] Utilizatorul a cautat cuvantul: univers
+[INFO] Utilizatorul a cautat cuvantul: universul
+[INFO] Utilizatorul a cautat cuvantul: test
+[INFO] Utilizatorul a cautat cuvantul: este
+[INFO] === INCHIDERE MOTOR DE CAUTARE ===
