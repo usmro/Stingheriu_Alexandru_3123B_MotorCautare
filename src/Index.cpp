@@ -38,3 +38,7 @@ void Index::cautaCuvant(const string& cuvantCautat, Logger& log) {
     }
     cout << "---------------------------------------\n";
 }
+
+size_t Index::getNumarCuvinteUnice() const {
+    return dictionar.size();
+}

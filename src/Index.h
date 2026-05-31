@@ -16,4 +16,5 @@ public:
     
     // Caută cuvântul instantaneu (O(1)) și afișează rezultatele
     void cautaCuvant(const std::string& cuvantCautat, Logger& log);
+    size_t getNumarCuvinteUnice() const;
 };
