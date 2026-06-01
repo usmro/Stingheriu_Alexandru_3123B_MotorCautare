@@ -20,7 +20,6 @@ const std::unordered_map<std::string, int>& Document::getCuvinte() const {
     return frecventaCuvinte;
 }
 
-// Secretul vitezei: procesare manuală, fără alocări inutile de memorie
 void Document::analizeazaContinut() {
     std::ifstream fisier(caleAbsoluta);
     if (!fisier.is_open()) {

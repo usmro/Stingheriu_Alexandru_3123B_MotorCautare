@@ -18,3 +18,33 @@
 [INFO] Utilizatorul a cautat cuvantul: test
 [INFO] Utilizatorul a cautat cuvantul: este
 [INFO] === INCHIDERE MOTOR DE CAUTARE ===
+[INFO] === APLICATIE PORNITA ===
+[EROARE] Cale invalida introdusa in meniu: ./teste_masive/spatiu.txt
+[INFO] === APLICATIE INCHISA NORMAL ===
+[INFO] === APLICATIE PORNITA ===
+[INFO] Incepem indexarea in: ./teste_masive
+[INFO] Am inceput analizarea (ULTRA-FAST-MODE) pentru: ./teste_masive/alimente.txt
+[INFO] Analiza finalizata pentru: ./teste_masive/alimente.txt
+[INFO] Document integrat in indexul global: ./teste_masive/alimente.txt
+[INFO] Am inceput analizarea (ULTRA-FAST-MODE) pentru: ./teste_masive/natura.txt
+[INFO] Analiza finalizata pentru: ./teste_masive/natura.txt
+[INFO] Document integrat in indexul global: ./teste_masive/natura.txt
+[INFO] Am inceput analizarea (ULTRA-FAST-MODE) pentru: ./teste_masive/spatiu.txt
+[INFO] Analiza finalizata pentru: ./teste_masive/spatiu.txt
+[INFO] Document integrat in indexul global: ./teste_masive/spatiu.txt
+[INFO] Am inceput analizarea (ULTRA-FAST-MODE) pentru: ./teste_masive/tehnologie.txt
+[INFO] Analiza finalizata pentru: ./teste_masive/tehnologie.txt
+[INFO] Document integrat in indexul global: ./teste_masive/tehnologie.txt
+[INFO] === APLICATIE INCHISA NORMAL ===
+[INFO] === APLICATIE PORNITA ===
+[EROARE] Cale invalida introdusa in meniu: 
+[INFO] === APLICATIE INCHISA NORMAL ===
+[INFO] === APLICATIE PORNITA ===
+[INFO] Incepem indexarea in: ./teste_masive
+[INFO] Am inceput analizarea (Fast-Mode) pentru: ./teste_masive/alimente.txt
+[INFO] Analiza finalizata pentru: ./teste_masive/alimente.txt
+[INFO] Document integrat in indexul global: ./teste_masive/alimente.txt
+[INFO] Utilizatorul a cautat cuvantul: ou
+[INFO] Utilizatorul a cautat cuvantul: legume
+[INFO] Utilizatorul a cautat cuvantul: a
+[INFO] === APLICATIE INCHISA NORMAL ===
