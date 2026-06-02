@@ -48,3 +48,24 @@
 [INFO] Utilizatorul a cautat cuvantul: legume
 [INFO] Utilizatorul a cautat cuvantul: a
 [INFO] === APLICATIE INCHISA NORMAL ===
+[INFO] === APLICATIE PORNITA ===
+[EROARE] Cale invalida introdusa in meniu: ./te
+[INFO] === APLICATIE INCHISA NORMAL ===
+[INFO] === APLICATIE PORNITA ===
+[INFO] Incepem indexarea in: ./teste_stop_words
+[INFO] Am inceput analizarea (ULTRA-FAST + NLP) pentru: ./teste_stop_words/test_lista.txt
+[INFO] Analiza finalizata pentru: ./teste_stop_words/test_lista.txt
+[INFO] Document integrat in indexul global: ./teste_stop_words/test_lista.txt
+[INFO] Am inceput analizarea (ULTRA-FAST + NLP) pentru: ./teste_stop_words/test_mixt.txt
+[INFO] Analiza finalizata pentru: ./teste_stop_words/test_mixt.txt
+[INFO] Document integrat in indexul global: ./teste_stop_words/test_mixt.txt
+[INFO] Am inceput analizarea (ULTRA-FAST + NLP) pentru: ./teste_stop_words/test_scurte.txt
+[INFO] Analiza finalizata pentru: ./teste_stop_words/test_scurte.txt
+[INFO] Document integrat in indexul global: ./teste_stop_words/test_scurte.txt
+[INFO] Utilizatorul a cautat cuvantul: este
+[INFO] Utilizatorul a cautat cuvantul: masina
+[INFO] Utilizatorul a cautat cuvantul: pentru
+[INFO] Utilizatorul a cautat cuvantul: dar
+[INFO] Utilizatorul a cautat cuvantul: de
+[INFO] Utilizatorul a cautat cuvantul: ed
+[INFO] === APLICATIE INCHISA NORMAL ===
