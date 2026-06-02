@@ -69,3 +69,21 @@
 [INFO] Utilizatorul a cautat cuvantul: de
 [INFO] Utilizatorul a cautat cuvantul: ed
 [INFO] === APLICATIE INCHISA NORMAL ===
+[INFO] === APLICATIE PORNITA ===
+[EROARE] Cale invalida introdusa in meniu: ./teste_stop_words
+[INFO] === APLICATIE INCHISA NORMAL ===
+[INFO] === APLICATIE PORNITA ===
+[INFO] Incepem indexarea in: ./teste_stop_words
+[INFO] Am inceput analizarea (ULTRA-FAST + NLP) pentru: ./teste_stop_words/test_lista.txt
+[INFO] Analiza finalizata pentru: ./teste_stop_words/test_lista.txt
+[INFO] Document integrat in indexul global: ./teste_stop_words/test_lista.txt
+[INFO] Am inceput analizarea (ULTRA-FAST + NLP) pentru: ./teste_stop_words/test_mixt.txt
+[INFO] Analiza finalizata pentru: ./teste_stop_words/test_mixt.txt
+[INFO] Document integrat in indexul global: ./teste_stop_words/test_mixt.txt
+[INFO] Am inceput analizarea (ULTRA-FAST + NLP) pentru: ./teste_stop_words/test_scurte.txt
+[INFO] Analiza finalizata pentru: ./teste_stop_words/test_scurte.txt
+[INFO] Document integrat in indexul global: ./teste_stop_words/test_scurte.txt
+[INFO] Utilizatorul a cautat cuvantul: inapoi
+[INFO] Utilizatorul a cautat cuvantul: copac
+[INFO] Utilizatorul a cautat cuvantul: ccc
+[INFO] === APLICATIE INCHISA NORMAL ===

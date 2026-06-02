@@ -2,11 +2,11 @@
 #include <filesystem>
 #include <string>
 #include <chrono>
+#include <unordered_set>
 
 #include "Logger.h"
 #include "Document.h"
 #include "Index.h"
-
 namespace fs = std::filesystem;
 
 int main() {
@@ -71,32 +71,55 @@ int main() {
             std::cout << "[SUCCES] Indexare finalizata in " << ultimaDurataMs << " ms.\n";
 
         } 
-        else if (optiune == "2") {
+else if (optiune == "2") {
             // --- OPTIUNEA 2: CAUTARE ---
             if (!indexareEfectuata) {
                 std::cout << "\n[!] Te rog sa indexezi un director (Optiunea 1) inainte de a cauta!\n";
                 continue;
             }
 
-            std::cout << "\n--- Mod Cautare (scrie 'inapoi' pentru a reveni la meniu) ---\n";
+            std::cout << "\n--- Mod Cautare (scrie '!meniu' pentru a reveni la meniu) ---\n";
+            
+            // Definim aceeasi lista de stop words si in interfata pentru a o putea verifica
+            static const std::unordered_set<std::string> stopWords = {
+                "este", "sunt", "are", "sau", "dar", "iar", "daca", "pentru", 
+                "din", "spre", "sub", "care", "cine", "cum", "cand",
+                "nici", "deci", "insa", "totusi", "acesta", "aceasta"
+            };
+
             while (true) {
                 std::cout << "Cauta: ";
                 std::string cuvantCautat;
                 std::getline(std::cin, cuvantCautat);
 
-                if (cuvantCautat == "inapoi" || cuvantCautat == "exit") {
-                    break; // Iesim din bucla de căutare, ne întoarcem la meniu
+                // 1. Noua comanda de iesire (foarte greu de tastat din greseala)
+                if (cuvantCautat == "!meniu") {
+                    break; 
                 }
 
                 if (!cuvantCautat.empty()) {
+                    // Transformam literele in litere mici pentru verificare
                     for (char& c : cuvantCautat) {
                         c = std::tolower(c);
                     }
-                    indexulMeu.cautaCuvant(cuvantCautat, log);
+
+                    // 2. Verificam filtrele inainte de a cauta efectiv in Tabela Hash
+                    if (cuvantCautat.length() < 3) {
+                        std::cout << "\n[INFO] Cuvantul '" << cuvantCautat << "' este prea scurt. A fost filtrat la indexare.\n";
+                        std::cout << "---------------------------------------\n";
+                    } 
+                    else if (stopWords.find(cuvantCautat) != stopWords.end()) {
+                        std::cout << "\n[INFO] '" << cuvantCautat << "' este un cuvant de legatura (Stop Word).\n";
+                        std::cout << "       Sistemul l-a ignorat pentru a optimiza memoria RAM.\n";
+                        std::cout << "---------------------------------------\n";
+                    } 
+                    else {
+                        // Daca trece de filtre, il cautam in structura noastra
+                        indexulMeu.cautaCuvant(cuvantCautat, log);
+                    }
                 }
             }
-        } 
-        else if (optiune == "3") {
+        }        else if (optiune == "3") {
             // --- OPTIUNEA 3: STATISTICI ---
             std::cout << "\n--- Statistici Motor de Cautare ---\n";
             if (!indexareEfectuata) {
