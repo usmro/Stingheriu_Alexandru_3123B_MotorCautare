@@ -53,3 +53,12 @@ Executabilul va fi creat în rădăcina proiectului. Porniți aplicația cu coma
 ```bash
 ./motor_cautare
 ```
+
+
+## Organizarea și Conceptele POO
+
+Arhitectura proiectului respectă principiile fundamentale ale Programării Orientate pe Obiecte (POO):
+
+* **Încapsulare: Datele interne ale claselor (Index, Document) sunt protejate și accesibile doar prin metode publice.
+* **Polimorfism și Moștenire: Implementate prin Design Pattern-ul Observer. Interfața IObserver este moștenită de clasa Logger, permițând decuplarea logicii de parsare de cea de jurnalizare.
+* **Gestionarea Excepțiilor: Folosirea blocurilor try-catch previne blocajele în cazul citirii unor fișiere cu permisiuni restricționate.
