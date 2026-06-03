@@ -28,4 +28,28 @@ Dacă folosiți o distribuție bazată pe Debian/Ubuntu (sau WSL), puteți insta
 ```bash
 sudo apt-get update
 sudo apt-get install build-essential git
+```
 
+## Compilare și Rulare
+
+1. Clonați repository-ul
+
+Descărcați proiectul local folosind Git:
+```bash
+git clone <url-repository>
+cd POO_MotorCautare
+```
+
+2. Compilați proiectul
+
+Proiectul se compilează automat folosind Makefile-ul inclus, care aplică flag-uri de optimizare extremă (-O3)
+```bash
+make
+```
+
+3. Rulați aplicația
+
+Executabilul va fi creat în rădăcina proiectului. Porniți aplicația cu comanda:
+```bash
+./motor_cautare
+```
